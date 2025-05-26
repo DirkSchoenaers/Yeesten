@@ -1,12 +1,12 @@
 {
-    "indexTitle": "Marlowe [short extract]",
+    "indexTitle": "Edizione Logica Avicennae [experimental encoding]",
     "webSite": "",
     "logoUrl": "",
     
-    "dataUrl": "data/text/marlowe.xml",
-    "sourcesUrl": "",
-    "analoguesUrl": "",
-    "sourcesTextsUrl": "",
+    "dataUrl": "data/text/avicenna.xml",
+    "sourcesUrl": "data/text/sources.xml",
+    "analoguesUrl": "data/text/analogues.xml",
+    "sourcesTextsUrl": "data/text/sources/",
     "singleImagesUrl": "",
     "enableXMLdownload": true,
     
@@ -28,7 +28,7 @@
             "label": "MULTIPLE_RECENSIONS",
             "icon": "mode-versions",
             "viewMode": "versions",
-            "visible": false
+            "visible": true
         },
         {
             "label": "IMAGE_TEXT",
@@ -52,7 +52,7 @@
             "label": "SOURCE_TEXT",
             "icon": "mode-srcTxt",
             "viewMode": "srcTxt",
-            "visible": false
+            "visible": true
         },
         {
             "label"    : "3DHOP",
@@ -86,13 +86,13 @@
     ],
     
     "showDocumentSelector": false,
-    "enableNavBar": true,
+    "enableNavBar": false,
     "initNavBarOpened": false,
     "thumbnailsButton": false,
     "viscollButton": false,
 
     "toolPinAppEntries": true,
-    "toolImageTextLinking": false,
+    "toolImageTextLinking": true,
 
     "namedEntitiesSelector": false,
     "namedEntitiesToHandle": [
@@ -131,16 +131,45 @@
     "skipWitnesses": "",
     "maxWitsLoadTogether": 5,
 
-    "witnessesGroups": [],
+    "witnessesGroups": [
+        {
+            "groupName": "Group 1",
+            "witnesses": [
+                "V",
+                "P",
+                "N",
+                "M",
+                "G",
+                "C",
+                "R"
+            ]
+        },
+        {
+            "groupName": "Group 2",
+            "witnesses": [
+                "F",
+                "D",
+                "O",
+                "W",
+                "M5mg",
+                "B",
+                "U"
+            ]
+        }
+    ],
 
-    "showInlineCriticalApparatus": true,
+    "showInlineCriticalApparatus": false,
     "showInlineSources": false,
     "showInlineAnalogues": false,
     "showReadingExponent": true,
 
     "toolHeatMap": true,
 
-    "versions": [],
+    "versions": [
+        "rec2",
+        "rec1",
+        "rec3"
+    ],
 
     "listDef": "<listWit>, <listChange>",
     "versionDef": "<witness>, <change>",
@@ -209,8 +238,7 @@
         "en",
         "it"
     ],
-    
-    "showObjectSelector": false,
+    "showObjectSelector": true,
 
     "tdhopViewerOptions": {
 
